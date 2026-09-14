@@ -43,7 +43,7 @@ h3 {
 }
 
 .header {
-    background-color: #3b1966;
+    background-color: #280f49;
     color: #fff;
     padding: 15px 0;
     position: fixed;
@@ -97,7 +97,7 @@ h3 {
 .nav-link.active,
 .nav-link:hover {
     color: #fff;
-    background-color: #8f0202;
+    background-color: #3d1b69;
     border-radius: 3px;
 }
 
@@ -114,4 +114,12 @@ h3 {
     list-style: disc;
     margin-left: 10px;
     padding-left: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
