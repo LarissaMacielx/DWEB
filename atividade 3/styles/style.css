@@ -37,6 +37,16 @@ h3 {
     text-align: start;
 }
 
+.title h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
 .principal-title {
     padding: 20px;
     text-align: center;
@@ -110,8 +120,12 @@ h3 {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.sub-list a:hover {
+            background-color: #280f49;
+        }
+
 .sub-item {
-    padding: 10px;
+    margin-Bottom: 10PX;
     color: #fff;
     text-decoration: none;
     display: block;
@@ -158,10 +172,32 @@ h3 {
     padding-left: 10px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+.article-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+.div-image {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-title {
+    margin-top: 10px;
+}
+
+
+
