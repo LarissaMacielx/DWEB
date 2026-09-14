@@ -5,7 +5,8 @@
 }
 
 html {
-    scroll-behavior: smooth; /*scrolagem de página suave*/
+    scroll-behavior: smooth;
+    /*scrolagem de página suave*/
 }
 
 body {
@@ -57,17 +58,19 @@ h3 {
     height: 75px;
     margin-left: 20px;
     display: inline-block;
-    margin: 20px;   
+    margin: 20px;
 }
 
 .nav {
     width: 960px;
     margin: 0 auto;
-    overflow: hidden; /*<--- qualquer coisa que extrapole o limite das bordas é cortado ou escondido*/
+    
+    /*<--- qualquer coisa que extrapole o limite das bordas é cortado ou escondido*/
 }
 
 .nav-logo {
-    color: #fff ;     /*var(--corprincipal)*/
+    color: #fff;
+    /*var(--corprincipal)*/
     text-decoration: none;
     /*tira sublinhado dos links*/
     font-weight: bold;
@@ -83,6 +86,44 @@ h3 {
     /*remover marcador*/
 }
 
+.item-pai {
+    position: relative;
+    /*necessário para posicionar a sublista em relação ao item pai*/
+}
+
+.item-pai:hover .sub-list {
+    display: block;
+    /*mostra a sublista quando o item pai é hover*/
+}
+
+.sub-list {
+    display: none;
+    position: absolute;
+    /* Faz a sublista flutuar abaixo do item */
+    top: 100%;
+    left: 0;
+    background-color: #3d1b69;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.sub-item {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sub-link {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
 .nav-item {
     display: inline-block;
     margin-left: 20px;
@@ -93,6 +134,7 @@ h3 {
     text-decoration: none;
     padding: 5px 10px;
 }
+
 
 .nav-link.active,
 .nav-link:hover {
