@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações</title>
+</head>
+
+<body>
+    <script>
+
+        let n1 = parseFloat(prompt("Digite o primeiro número:"));
+        let n2 = parseFloat(prompt("Digite o segundo número:"));
+
+        let soma = n1 + n2;
+        let subtracao = n1 - n2;
+        let multiplicacao = n1 * n2;
+
+        alert("Soma: " + soma);
+        alert("Subtração: " + subtracao);
+        alert("Multiplicação: " + multiplicacao);
+
+        if (n2 != 0) {
+            let divisao = n1 / n2;
+            let resto = n1 % n2;
+
+            alert("Divisão: " + divisao.toFixed(2));
+            alert("Resto da divisão: " + resto);
+        } else {
+            alert("Não é possível dividir por zero!");
+        }
+
+    </script>
+</body>
+
+</html>
