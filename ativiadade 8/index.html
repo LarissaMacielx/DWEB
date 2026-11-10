@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pesquisa de opinião – Saída do cinema</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 500px; margin: 20px auto; padding: 0 10px; }
+    label { display: block; margin-top: 10px; }
+    input, select { width: 100%; padding: 6px; }
+    button { margin-top: 12px; padding: 8px 14px; cursor: pointer; }
+    #erro { color: red; }
+    .linha { padding: 6px 0; border-bottom: 1px solid #ccc; }
+    .oculto { display: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Pesquisa de opinião</h1>
+    <p class="sub">Saída do filme · 45 pessoas</p>
+
+    <section id="formulario">
+      <div><strong id="contador">Pessoa 1 de 45</strong></div>
+      
+
+      <label for="idade">Idade</label>
+      <input type="number" id="idade" min="0" max="120" step="1" inputmode="numeric">
+
+      <label for="sexo">Sexo</label>
+      <select id="sexo">
+        <option value="">Selecione</option>
+        <option value="F">Feminino</option>
+        <option value="M">Masculino</option>
+        <option value="O">Outros</option>
+      </select>
+
+      <label for="opiniao">Opinião sobre o filme</label>
+      <select id="opiniao">
+        <option value="">Selecione</option>
+        <option value="4">Ótimo (4)</option>
+        <option value="3">Bom (3)</option>
+        <option value="2">Regular (2)</option>
+        <option value="1">Péssimo (1)</option>
+      </select>
+
+      <p id="erro" role="alert"></p>
+
+      <div>
+        <button type="button" id="btnAdicionar">Registrar resposta</button>
+        <button type="button" id="btnExemplo">Preencher o restante com dados de teste</button>
+      </div>
+    </section>
+
+    <section id="resultado" class="oculto">
+      <h2>Resultado da pesquisa</h2>
+      <div id="lista"></div>
+      <div>
+        <button type="button" id="btnReiniciar">Nova pesquisa</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
